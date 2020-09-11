@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(21, 32, 43);
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto 30px;
+  font-family: "Roboto", sans-serif;
+}
+
+img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+a {
+  color: rgb(27, 149, 224);
+  text-decoration: none;
+  padding-right: 10px;
+}
+
+h2,
+h3 {
+  border-bottom: 1px solid rgb(56, 68, 77);
+  background-color: rgb(21, 32, 43);
+  margin: 0;
+  padding: 15px;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+}
+
+h2 small {
+  display: block;
+  font-size: 14px;
+  margin-top: 7px;
+  font-style: italic;
+}
+
+.tweets-container {
+  border-left: 1px solid rgb(56, 68, 77);
+  border-right: 1px solid rgb(56, 68, 77);
+  border-bottom: 1px solid rgb(56, 68, 77);
+  color: #fff;
+  list-style-type: none;
+  padding: 0;
+  margin: 0 auto;
+  width: 600px;
+  max-width: 100vw;
+}
+
+.tweet {
+  border-bottom: 1px solid rgb(56, 68, 77);
+  display: flex;
+  transform: translateY(-100px);
+  animation: in 0.3s ease-in forwards;
+}
+
+.tweet:last-of-type {
+  border-bottom: none;
+}
+
+@keyframes in {
+  to {
+    transform: translateY(0);
+  }
+}
+
+.tw-left {
+  padding: 15px 20px;
+}
+
+.tw-right {
+  padding: 10px 10px 10px 0;
+  flex: 1;
+}
+
+.name {
+  margin: 0;
+}
+
+.name > span {
+  font-size: 15px;
+  color: rgb(136, 153, 166);
+  padding-left: 10px;
+}
+
+.text {
+  font-size: 15px;
+  margin: 5px 0;
+  line-height: 1.4;
+}
